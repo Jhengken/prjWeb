@@ -1,0 +1,28 @@
+﻿@model prjWeb.Models.CCustomer
+@{
+    ViewBag.Title = "showbyID";
+    string photo = "查無該筆資料.jpg";
+    if (Model != null)
+    {
+        photo = Model.fName + ".PNG";
+    }
+
+}
+
+<h2>會員資料查詢</h2>
+<img src="~/images/@photo" width="300" height="180">
+@* Razer:在html寫c# *@
+@{ if (Model != null)
+    {
+        <h1>@Model.fName</h1>
+        <h6>@Model.fPhone</h6>
+        <h6>@Model.fEmail</h6>
+        <h6>@Model.fAddress</h6>
+    }
+    else
+    {
+        @:<br>查無資料
+    }
+
+}
+

@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "showbyID";
+    string photo = "查無該筆資料.jpg";
+    if (ViewBag.PP != null)
+    {
+        photo = ViewBag.PP.fname + ".PNG";
+    }
+
+}
+
+<h2>會員資料查詢</h2>
+<img src="~/images/@photo" width="300" height="180">
+@* Razer:在html寫c# *@
+@{ if (ViewBag.PP != null)
+    {
+        <h1>@ViewBag.PP.fname</h1>
+        <h6>@ViewBag.PP.fphone</h6>
+        <h6>@ViewBag.PP.femail</h6>
+        <h6>@ViewBag.PP.faddress</h6>
+    }
+    else
+    {
+        @:<br>查無資料
+    }
+
+}
+
