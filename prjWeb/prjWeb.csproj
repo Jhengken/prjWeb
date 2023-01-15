@@ -117,6 +117,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AController.cs" />
+    <Compile Include="Controllers\CCCController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
@@ -169,6 +170,7 @@
     <Content Include="Views\A\showById.cshtml" />
     <Content Include="Views\Product\List.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\CCC\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
